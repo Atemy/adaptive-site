@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/my.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <header>
+    <div class="headerDiv">
+      <div class="sideButtonDiv leftSideButtonDiv">
+        <a href="#">Back</a>
+      </div>
+
+      <div class="centerButtonDiv">
+        <p>Information</p>
+      </div>
+
+      <div class="sideButtonDiv rightSideButtonDiv">
+        <a href="#" class="rightSide">Confirm</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="avatarDiv">
+    <img class="avatar" src="/img/Avatar.jpg" alt="Аанг">
+  </div>
+
+  <div class="userLabels">
+    <p class="userName">Aang Aangovich</p>
+    <p class="userStatus">Avatar</p>
+  </div>
+
+  <!-- Уместен ли тут fieldset? -->
+  <fieldset class="segmentedControls">
+    <input class="controlsInput" type="radio" name="segmentedButton" id="radio-1" value="Friends">
+    <label for="radio-1" class="segmentedLabel">Friends</label>
+
+    <input class="controlsInput" type="radio" name="segmentedButton" id="radio-2" value="Bookmarks">
+    <label for="radio-2" class="segmentedLabel">Bookmarks</label>
+
+    <input class="controlsInput" type="radio" name="segmentedButton" id="radio-3" value="Settings" checked>
+    <label for="radio-3" class="segmentedLabel">Settings</label>
+  </fieldset>
+
+
+  <div class="userInfo">
+    <h4 class="contentHeader">User Information</h4>
+    <p class="userParagraph">
+      And although his airbending skills are great, he has a
+      lot to learn before he's ready to save anyone. But I
+      believe Aang can save the world.</p>
+  </div>
+
+  <form class="userInfoForm">
+    <h4 class="contentHeader">Email address</h4>
+    <input class="userInput errorInput" type="email" id="emailInput" placeholder="Username@Sokol.ru">
+    <label class="errorLabel" for="emailInput">
+      <p class="errorMessage">Please enter an email address in the format <b>username@Sokol.ru</b></p>
+    </label>
+
+    <h4 class="contentHeader">Full name</h4>
+    <div class="userNameDiv">
+      <input class="userInput userNameInput" type="text" id="nameInput" placeholder="First Name">
+      <input class="userInput userNameInput" type="text" id="nameInput" placeholder="Second Name">
+    </div>
+
+    <h4 class="contentHeader">Address</h4>
+    <select class="userInput">
+      <option>Water Tribe</option>
+      <option>Earth Kingdom</option>
+      <option>Fire Kingdom</option>
+      <option>Air Kingdom</option>
+    </select>
+
+    <select class="userInput">
+      <option>Water city</option>
+      <option>Earth city</option>
+      <option>Fire city</option>
+      <option>Air city</option>
+    </select>
+
+    <input class="userInput" type="number" id="numberInput" placeholder="4815162342">
+    <input class="userInput" type="text" id="StreetInput" placeholder="Street">
+  </form>
+
+  <!-- Уместен ли тут fieldset? -->
+  <fieldset class="hourlyRateFieldset">
+    <h4 class="contentHeader">Hourly rate</h4>
+
+    <div class="userNameDiv">
+      <label class="hourlyRateDiv userNameInput userInput" for="hourlyRate-1">
+        <input class="hourlyRateInput" type="radio" name="segmentedButton" id="hourlyRate-1" value="10-20">
+        <div class="radioButton"></div>
+        <label for="hourlyRate-1" class="hourlyRateLabel">$10-20</label>
+      </label>
+
+      <label class="hourlyRateDiv userNameInput userInput" for="hourlyRate-2">
+        <input class="hourlyRateInput" type="radio" name="segmentedButton" id="hourlyRate-2" value="20-40">
+        <div class="radioButton"></div>
+        <label for="hourlyRate-2" class="hourlyRateLabel">$20-40</label>
+      </div>
+    </label>
+
+    <div class="userNameDiv">
+      <label class="hourlyRateDiv userNameInput userInput" for="hourlyRate-3">
+        <input class="hourlyRateInput" type="radio" name="segmentedButton" id="hourlyRate-3" value="40-80">
+        <div class="radioButton"></div>
+        <label for="hourlyRate-3" class="hourlyRateLabel">$40-80</label>
+      </label>
+
+      <label class="hourlyRateDiv userNameInput userInput" for="hourlyRate-4">
+        <input class="hourlyRateInput" type="radio" name="segmentedButton" id="hourlyRate-4" value="80+">
+        <div class="radioButton"></div>
+        <label for="hourlyRate-4" class="hourlyRateLabel">>$80&nbsp;&nbsp;</label>
+      </label>
+    </div>
+  </fieldset>
+
+  <h4 class="contentHeader">Choose your skills</h4>
+  <footer class="mobileFooter">
+    <a class="footerLink" href="#">Profile</a>
+    <a class="footerLink" href="#">Dashboard</a>
+    <a class="footerLink" href="#">Sales</a>
+    <a class="footerLink" href="#">Projects</a>
+    <a class="footerLink" href="#">Ecommerce</a>
+  </footer>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

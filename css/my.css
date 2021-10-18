@@ -1,0 +1,239 @@
+a,
+a:visited{
+  text-decoration: none;
+  color: rgba(117, 125, 138, 1);
+}
+
+p{
+  margin: auto;
+}
+/*
+input[type=radio] {
+  display: none;
+} */
+
+.headerDiv{
+  width: 100%;
+  height: 48px;
+  background-color:rgba(233, 245, 247, 0.95);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sideButtonDiv{
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+.leftSideButtonDiv{
+  margin-left: 12px;
+  text-align: start;
+}
+
+.rightSideButtonDiv{
+  margin-right: 12px;
+  text-align: end;
+}
+
+.centerButtonDiv{
+  font-weight: bold;
+  font-size: 18px;
+  margin: auto;
+}
+
+.avatarDiv{
+  padding: 16px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.avatar{
+  width: 20%;
+  border-radius: 50%;
+}
+.avatar:after {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.userLabels{
+  padding-bottom: 23px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.userName{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.userStatus{
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(117, 125, 138, 1);
+}
+
+.segmentedControls{
+  height: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+  color:rgba(117, 125, 138, 1);
+  background-color:rgba(233, 245, 247, 1);
+}
+
+.segmentedLabel{
+  min-width: 30%;
+  margin: auto 4px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.controlsInput{
+  display: none;
+}
+
+.controlsInput:checked + label{
+  color:rgba(78, 115, 248, 1);
+  background-color: white;
+  font-weight: bold;
+  transition: 0.6s linear;
+}
+
+.controlsInput:not(:checked) + label{
+  background-color: none;
+  color:rgba(117, 125, 138, 1);
+  font-weight:normal;
+  transition: 0.6s linear;
+}
+
+.contentHeader{
+  margin:24px 16px 4px 16px;
+}
+
+.userParagraph{
+  margin-top: 4px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: rgba(117, 125, 138, 1);
+}
+
+.userInfoForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.userInput{
+  height: 48px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  padding-left: 9px;
+  border:rgba(117, 125, 138, 1) 1px solid;
+  border-radius: 10px;
+}
+
+.userInput:focus{
+  border:#4E73F8 1px solid;
+  outline: rgb(156, 176, 246) solid 4px;
+}
+
+.errorInput{
+  border:rgba(244, 60, 60, 1) 1px solid;
+  outline: rgb(245, 158, 158) solid 4px;
+}
+
+.errorMessage{
+  margin-top: 4px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: rgba(244, 60, 60, 1);
+}
+
+.userNameDiv{
+  height: 48px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userNameInput{
+  margin: auto 0;
+  width: 40%;
+  height: 100%;
+}
+
+.hourlyRateFieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+.hourlyRateDiv{
+  display: flex;
+
+  justify-content: center;
+}
+
+.hourlyRateInput{
+  display: none;
+}
+
+.radioButton, .hourlyRateLabel{
+  margin: auto 8px;
+  margin-left: 8px;
+}
+
+
+.radioButton{
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  border:rgba(117, 125, 138, 1) 1px solid;
+}
+
+.hourlyRateInput:checked + .radioButton{
+  width: 8px;
+  height: 8px;
+  border:rgba(105, 137, 254, 1) 9px solid;
+  transition: 0.1s linear;
+}
+
+/* Почему не стилизуется верхний label?( */
+.hourlyRateInput:checked + .hourlyRateDiv{
+  border:rgba(105, 137, 254, 1) 1px solid;
+  background-color: rgba(105, 137, 254, 1);
+}
+
+
+.mobileFooter{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  background-color:rgba(233, 245, 247, 1);
+}
+
+.footerLink{
+  height: 100%;
+  width: 20%;
+  margin: auto;
+  padding-top: 13px;
+  text-align: center;
+
+  font-size: 10px;
+}
