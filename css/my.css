@@ -148,7 +148,6 @@ input[type=radio] {
 
 .errorInput{
   border:rgba(244, 60, 60, 1) 1px solid;
-  outline: rgb(245, 158, 158) solid 4px;
 }
 
 .errorMessage{
